@@ -30,7 +30,7 @@ input{
 	top:0;
 	left:0;
 	display:none;
-	z-index:999;
+	z-index:99;
 	background:rgba(0,0,0,.1);
 }
 /*顶部导航栏*/
@@ -265,7 +265,7 @@ input{
 	position:relative;
 	width:85%;
 	height:97.4%;
-	/*border:1px solid darkslategray;*/
+	border:1px solid lightgray;
 	margin:0 auto;
 	margin-top:2%;
 }
@@ -275,10 +275,9 @@ input{
 	/*border-bottom:2px solid gray;*/
 }
 .frient_center{
-	width:19%;
+	width:100%;
 	height:100%;
-	float:right;
-	margin-right:100px;
+	margin:0 auto;
 }
 .frient_center span{
 	float:left;
@@ -289,10 +288,37 @@ input{
 }
 .frient_center img{
 	
-	margin-top:28px;
+	margin-top:18px;
 	float:left;
 }
+.frient_center p:nth-child(1) a{
+	display:block;
+	width:49.9%;
+	height:54px;
+	font-size:30px;
+	color: rgb(86,158,255);
+	margin-top:15px;
+	padding-top:26px;
+	float:left;
+	text-align:center;
+	border-right:1px solid lightgray;
+	border-bottom:8px solid rgb(86,158,255);
+}
+.frient_center p:nth-child(2) a{
+	display:block;
+	width:50%;
+	height:54px;
+	font-size:30px;
+	color:lightgray;
+	/*color: rgb(86,158,255);*/
+	margin-top:15px;
+	padding-top:26px;
+	float:left;
+	text-align:center;
+	border-bottom:8px solid lightgray;
+}
 .frient_right{
+	
 	width:20%;
 	height:80%;
 	float:right;
@@ -340,6 +366,24 @@ input{
 	border:1px solid lightgray;
 	overflow:hidden;
 }
+.timee{
+	width:100%;
+	height:50px;
+}
+.timee span:nth-child(3){
+	margin-left:10px;
+	font-size:18px;
+}
+.timee span:nth-child(1){
+	margin-left:20px;
+	
+}
+.timee span{
+	display:block;
+	float:left;
+	font-size:18px;
+	margin-top:13px;
+}
 .frient-lists{
 	padding-top:30px;
 	padding-bottom:30px;
@@ -363,6 +407,16 @@ input{
 	/*padding-top:50px;*/
 	padding-bottom:16px;
 	font-size:30px;
+}
+.show-1{
+	float:left;
+	width:34%;
+}
+.change{
+	color: orange;
+}
+.gsname span{
+	font-size:16px;
 }
 .frient-lists .right-pic{
 	float:left;
@@ -539,7 +593,6 @@ input{
 	left:800px;
 	width:380px;
 	height:380px;
-	/*border:2px solid rgba(0,0,0,.5);*/
 	background: white;
 	display:none;
 	z-index: 100;

@@ -99,23 +99,15 @@ input{
 	font-size:25px;
 }
 .register-ul li:nth-child(1) a{
-	color: dodgerblue;
+	color: darkgray;
 }
 .register-ul li:nth-child(2) a{
 	color:darkgray;
 	font-size:20px;
 }
 .register-ul li:nth-child(3) a{
-	color:darkgray;
+	color: dodgerblue;
 }
-/*信息输入*/
-/*.infor{
-	width:840px;
-	height:267px;
-	border:1px solid gray;
-}*/
-
-/*账号*/
 .box{
 	position:relative;
 	overflow:hidden;

@@ -20,7 +20,7 @@
 
 						<div class="register-div">
 							<ul class="register-ul">
-								<li><a href="###" class="log">登录</a></li>
+								<li><a href="login.html" class="log">登录</a></li>
 								<li><a href="###">|</a></li>
 								<li><a href="###" class="regg">注册</a></li>
 							</ul>
@@ -75,48 +75,6 @@
 						<!--下一步-->
 						<div class="next"><a href="register.html">下一步</a></div>
 					</div>
-				
-					<div class="login">
-						<!--登录注册-->
-						<div class="login-div">
-							<ul class="login-ul">
-								<li><a href="login.html" class="log">登录</a></li>
-								<li><a href="###">|</a></li>
-								<li><a href="###" class="reg">注册</a></li>
-							</ul>
-						</div>
-						<!--信息输入-->
-						
-							<div class="infor">
-							<!--登录的部分-->
-								<div class="infor-login">
-									<div class="infor_1">
-										<ul class="infor-ul-1">
-											<li><img src="img/zhanghao_03.png"></li>
-											<li>账号</li>
-										</ul>
-										<input type="text" class="phone" name="user" placeholder="请输入账号">
-									
-									</div>
-								<!--密码-->
-									<div class="infor_2">
-										<ul class="infor-ul-2">
-											<li><img src="img/password_03.png"></li>
-											<li>密码</li>
-										</ul>
-										<input type="password" class="password" placeholder="请输入密码">
-									</div>
-									<!--协议-->
-									<div class="infor_3">
-										<input type="checkbox">
-										<p>我已经阅读并同意《平台注册服务协议》和《平台注册服务协议》</p>
-									</div>
-								</div>					
-							</div>
-		
-						<!--下一步-->
-						<div class="next"><a href="###">下一步</a></div>
-					</div>
 					
 				
 					</div>
@@ -134,52 +92,52 @@
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 	<script>
-		//点击注册，移动box内部窗口
-		$(".log")[0].style.color="darkgray";
-		$(".regg")[0].style.color="rgb(86,158,255)";
-		$(".log")[0].onmousedown=function(){
-			$(".mbox")[0].style.left="-420px";
-			$(".log")[1].style.color="rgb(86,158,255)";
-			$(".regg")[1].style.color="darkgray";
-		}
-		$(".reg")[0].onmousedown=function(){
-			$(".mbox")[0].style.left="0";
-		}
-		//点击获取验证码
-		var i=60;//点击获取验证后的读秒数
-		var time="";
-		var tt=1;//判断读秒时是否可以点击
-		var tet=/^1[3458]\d{9}$/;
-		$(".phone")[0].onblur=function(){
-			console.log("aaa")
-			var value=$(".phone").val();
-			if(!tet.exec(value)){
-				$(".redX")[0].style.display="block";
-			}else{
-				$(".redX")[0].style.display="none";
-				$(".huoqu")[0].style.background="rgb(86,158,255)";
-				
-				$(".huoqu")[0].onmousedown=function(){
-					var self=this;
-					if(tt==1){
-						time=setInterval(function(){
-							tt=0;
-							self.children[0].innerHTML="已发送("+i+"s)";
-							
-							if(i==0){
-								clearInterval(time);
-							self.children[0].innerHTML="重新发送";
-							i=60;
-							tt=1
-							}
-							i--;
-						},1000)
-						
-					}
-				}
-				
-			}
-		}
+//		//点击注册，移动box内部窗口
+//		$(".log")[0].style.color="darkgray";
+//		$(".regg")[0].style.color="rgb(86,158,255)";
+//		$(".log")[0].onmousedown=function(){
+//			$(".mbox")[0].style.left="-420px";
+//			$(".log")[1].style.color="rgb(86,158,255)";
+//			$(".regg")[1].style.color="darkgray";
+//		}
+//		$(".reg")[0].onmousedown=function(){
+//			$(".mbox")[0].style.left="0";
+//		}
+//		//点击获取验证码
+//		var i=60;//点击获取验证后的读秒数
+//		var time="";
+//		var tt=1;//判断读秒时是否可以点击
+//		var tet=/^1[3458]\d{9}$/;
+//		$(".phone")[0].onblur=function(){
+//			console.log("aaa")
+//			var value=$(".phone").val();
+//			if(!tet.exec(value)){
+//				$(".redX")[0].style.display="block";
+//			}else{
+//				$(".redX")[0].style.display="none";
+//				$(".huoqu")[0].style.background="rgb(86,158,255)";
+//				
+//				$(".huoqu")[0].onmousedown=function(){
+//					var self=this;
+//					if(tt==1){
+//						time=setInterval(function(){
+//							tt=0;
+//							self.children[0].innerHTML="已发送("+i+"s)";
+//							
+//							if(i==0){
+//								clearInterval(time);
+//							self.children[0].innerHTML="重新发送";
+//							i=60;
+//							tt=1
+//							}
+//							i--;
+//						},1000)
+//						
+//					}
+//				}
+//				
+//			}
+//		}
 
 	</script>
 </html>

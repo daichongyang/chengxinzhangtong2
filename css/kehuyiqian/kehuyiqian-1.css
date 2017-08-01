@@ -30,7 +30,17 @@ input{
 	top:0;
 	left:0;
 	display:none;
-	z-index:999;
+	z-index:100;
+	background:rgba(0,0,0,.1);
+}
+.hei_1{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	z-index:100;
 	background:rgba(0,0,0,.1);
 }
 /*顶部导航栏*/
@@ -154,6 +164,7 @@ input{
 }
 /*中间内容*/
 .content{
+	position:relative;
 	width:100%;
 	height:1200px;
 	background:lightgray;
@@ -264,82 +275,41 @@ input{
 .right_box{
 	position:relative;
 	width:85%;
-	height:97.4%;
-	/*border:1px solid darkslategray;*/
+	height:97.5%;
+	border:1px solid darkslategray;
 	margin:0 auto;
 	margin-top:2%;
 }
-.frient{
+.chose{
 	width:100%;
-	height:100px;
-	/*border-bottom:2px solid gray;*/
+	height:200px;
+
+	border-bottom:1px solid gray;
 }
-.frient_center{
-	width:19%;
+/*.chose-box{
+	width:22%;
 	height:100%;
-	float:right;
-	margin-right:100px;
+	margin:0 auto;
 }
-.frient_center span{
+.chose-box a{
+	color:white;
+	text-decoration:underline;
+	font-size:20px;
 	float:left;
-	display:block;
-	font-size:30px;
-	margin-top:25px;
-	margin-left:10px;
-}
-.frient_center img{
-	
-	margin-top:28px;
+	margin-top:80px;
+	margin-left:18px;
+}*/
+/*.chose-box img{
 	float:left;
-}
-.frient_right{
-	width:20%;
-	height:80%;
-	float:right;
-	padding-top:20px;
-	padding-right:120px;
-}
-.frient_right div{
-	overflow:hidden;
-}
-
-.x{
-	position:absolute;
-	top:5px;
-	right:10px;
-}
-.frient_right .div_1 p{
-	width:44px;
-	height:10px;
-	background:red;
-	float:left;
-	margin-top:7px;
-	margin-right:8px;
-}
-
-.frient_right .div_2 p{
-	width:44px;
-	height:10px;
-	background:green;
-	float:left;
-	margin-top:7px;
-	margin-right:8px;
-}
-.frient_right .div_3 p{
-	width:44px;
-	height:10px;
-	background:red;
-	float:left;
-	margin-top:7px;
-	margin-right:8px;
-}
-/*好友列表*/
+	margin-top:50px;
+}*/
 .boxx{
 	width:100%;
-	height:202px;
+	height:100%;
 	border:1px solid lightgray;
 	overflow:hidden;
 }
+
 .frient-lists{
 	padding-top:30px;
 	padding-bottom:30px;
@@ -363,6 +333,16 @@ input{
 	/*padding-top:50px;*/
 	padding-bottom:16px;
 	font-size:30px;
+}
+.show-1{
+	float:left;
+	width:34%;
+}
+.change{
+	color: orange;
+}
+.gsname span{
+	font-size:16px;
 }
 .frient-lists .right-pic{
 	float:left;
@@ -464,13 +444,282 @@ input{
 .tianshu p:nth-child(4){
 	text-align:center;
 }
+/* right_box的右边*/
+.right_box_left{
+	float:left;
+	width:40%;
+	height:50%;
+	/*border:1px solid gray;*/
+	margin-left:60px;
+	margin-top:50px;
+}
+/*.right_box_left input{
+	padding-left:50px;
+}*/
+.right_box_left_1{
+	width:95%;
+	height:17%;
+	padding-left:5%;
+	font-size:20px;
+	border-radius:8px;
+	/*border:1px solid lightgray;*/
+	margin-bottom:20px;
+}
+
+.right_box_left_1 span:nth-child(3){
+	font-size:16px;
+	color:gray;
+}
+.right_box_left_1 input{
+	margin-top:42px;
+	margin-left:200px;
+	margin-right:10px;
+	width:40px;
+	font-size:20px;
+	outline:none;
+	border:0px;
+	/*margin-left:10px;*/
+}
+.right_box_left_2{
+	width:95%;
+	height:17%;
+	padding-left:5%;
+	font-size:20px;
+	border-radius:8px;
+	/*border:1px solid lightgray;*/
+	margin-bottom:20px;
+}
+.right_box_left_2 input{
+	width:40px;
+	margin-top:42px;
+	outline:none;
+	border:0px;
+	margin-left:30px;
+	font-size:17px;
+}
+.right_box_left_3{
+	width:95%;
+	height:17%;
+	padding-left:5%;
+	font-size:20px;
+	border-radius:8px;
+	margin-bottom:20px;
+	/*border:1px solid lightgray;*/
+}
+.right_box_left_3 input{
+	outline:none;
+	width:40px;
+	margin-top:42px;
+	border:0px;
+	margin-left:30px;
+	font-size:17px;
+}
+/****************************/
+.xl{
+	font-size:20px;
+	margin-bottom:20px;
+}
+.huank input{
+	margin-left:80px;
+	font-size:20px;
+	width:40px;
+	border:1px solid white;
+}
+.lixi input{
+	margin-left:128px;
+}
+.dbr input{
+	margin-left:108px;
+}
+.hk{
+	margin-left:5%;
+}
+.yc{
+	width:95%;
+	height:17%;
+	padding-left:5%;
+	font-size:20px;
+	border-radius:8px;
+	/*border:1px solid lightgray;*/
+	margin-bottom:20px;
+	display:block;
+}
+.yc input{
+	width:20px;
+	padding-left:10px;
+	border:1px solid white;
+	/*border-bottom:1px solid gray;*/
+	font-size:18px;
+	margin-left:10px;
+	
+}
+.yc .yc_input{
+	width:60px;
+}
+.dbr-change{
+	font-size:20px;
+	width:60px;
+	border:1px solid white;
+}
+.lixi-change{
+	font-size:20px;
+	width:60px;
+	border:1px solid white;
+}
+/*right_box的左边*/
+.right_box_right{
+	position:relative;
+	float:right;
+	width:40%;
+	height:50%;
+	margin-top:50px;
+	/*border:1px solid gray;*/
+	margin-right:60px;
+}
+.gs-div-bottom{
+	position:absolute;
+	bottom:90px;
+	left:0px;
+	width:431px;
+	height:376px;
+}
+.gs-div-bottom img{
+	width:25%;
+	margin-left:20px;
+}
+.gs-front-change{
+	position:relative;
+}
+.gs-front-change span{
+	position:relative;
+}
+.gs-front-change span .chacha{
+	position:absolute;
+	top:-142px;
+	right:-5px;
+}
+ .gs-front-change span .chachaa{
+	position:absolute;
+	top:10px;
+	left:-310px;
+	width:33.33px;
+	height:33.33px;
+	z-index:10;
+}
+.gs-front{
+	width:100%;
+	height:100%;
+	font-size:18px;
+	border:1px dashed darkgray;
+	float:left;
+}
+.gs-front p{
+	width:35%;
+	margin:0 auto;
+}
+.gs-front p:nth-child(3){
+	font-size:16px;
+	background:rgb(86,158,255);
+	padding:13px 0px;
+}
+.gs-front p:nth-child(1){
+	margin-top:140px;
+	margin-bottom:5px;
+	display:block;
+	text-align:center;
+	font-size:25px;
+	width:68%;
+}
+.gs-front p:nth-child(2){
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:15px;
+}
+.gs-front .gs-sp{
+	font-size:14px;
+	color:rgba(86,158,255,0.5);
+}
+.gs-front p:nth-child(3) a{
+	color:white;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.gs-front p:nth-child(4){
+	width:100%;
+	margin-top:10px;
+	font-size:13px;
+	color:darkgray;
+	text-align:center;
+}
+.gs-front-change{
+	width:100%;
+	height:100%;
+	font-size:18px;
+	border:1px dashed darkgray;
+	float:left;
+}
+.gs-front-change p{
+	width:35%;
+	margin:0 auto;
+}
+.gs-front-change .pp_1{
+	font-size:16px;
+	background:rgb(86,158,255);
+	padding:13px 0px;
+}
+/*.gs-front p:nth-child(1){
+	margin-top:140px;
+	margin-bottom:5px;
+	display:block;
+	text-align:center;
+	font-size:25px;
+	width:68%;
+}*/
+.gs-front-change .pp_1{
+	text-align:center;
+	margin-top:-23px;
+	margin-bottom:15px;
+}
+/*.gs-front-change .gs-sp{
+	font-size:14px;
+	color:rgba(86,158,255,0.5);
+}*/
+.gs-front-change .pp_1 a{
+	color:white;
+	display:block;
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.gs-front-change .pp_2{
+	width:100%;
+	margin-top:10px;
+	font-size:13px;
+	color:darkgray;
+	text-align:center;
+}
+.right_box_right_div{
+	margin-top:56px;
+}
+.right_box_right_div span:nth-child(1){
+	font-size:25px;
+}
+.right_box_right_div span:nth-child(2){
+	font-size:14px;
+	color:lightgray;
+}
 .qd{
+	position:absolute;
+	bottom:100px;
+	left:22%;
 	width:270px;
 	height:52px;
 	background:rgb(86,158,255);
 	text-align:center;
 	margin:0 auto;
-	margin-top:100px;
+
 }
 .qd a{
 	display:block;
@@ -480,6 +729,55 @@ input{
 	font-size:22px;
 	line-height:52px;
 }
+.qx{
+	position:absolute;
+	bottom:100px;
+	left:56%;
+	width:270px;
+	height:52px;
+	background:rgb(209,28,22);
+	text-align:center;
+	margin:0 auto;
+
+}
+.qx a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:22px;
+	line-height:52px;
+}
+.tanchu-1{
+	position:absolute;
+	bottom:485px;
+	left:1062px;
+	width:400px;
+	height:200px;
+	border:1px solid gray;
+	background:white;
+	z-index:100;
+	display:none;
+}
+.tanchu-1 p:nth-child(1){
+	font-size:20px;
+	margin-top:50px;
+	text-align:center;
+}
+.tanchu-1 p:nth-child(2){
+	font-size:20px;
+	margin-top:5px;
+	text-align:center;
+}
+.tanchu-1 a:nth-child(3){
+	position:absolute;
+	bottom:30px;
+	left:168px;
+	font-size:20px;
+	color:rgb(86,158,255);
+	text-decoration:underline;
+}
+
 /*底部部分*/
 
 #footer{
@@ -542,7 +840,7 @@ input{
 	/*border:2px solid rgba(0,0,0,.5);*/
 	background: white;
 	display:none;
-	z-index: 100;
+	z-index: 999;
 }
 .yingcan #textArea{
 	width:380px;

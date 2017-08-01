@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/makeqd/makeqd.css" />
+		<link rel="stylesheet" href="css/makeqd/makeqd-2.css" />
 	</head>
 	<body>
 		<div class="hei"></div>
@@ -44,40 +44,98 @@
 			<div class="left">
 				<ul class="list_1">
 					<li><a href="###">角色选择</a><input type="radio" name="change"/><span>个人</span><input class="input_2" type="radio" name="change"/><span>公司</span></li>
-					<li><a href="###">制作欠单</a></li>
-					<li><a href="###">客户待签</a></li>
-					<li><a href="###">客户已签</a></li>
-					<li><a href="###">客户拒签</a></li>
-					<li><a href="###">我的签单</a></li>
+					<li class="lii"><a href="###">制作欠单</a></li>
+					<li class="lii"><a href="###">客户待签</a></li>
+					<li class="lii"><a href="###">客户已签</a></li>
+					<li class="lii"><a href="###">客户拒签</a></li>
+					<li class="lii"><a href="###">我的签单</a></li>
 					<li class="xian"></li>
 				</ul>
 				<ul class="list_2">
 					
-					<li><a href="###">担保待签</a></li>
-					<li><a href="###">我的担保</a></li>
-					<li><a href="###">我被担保</a></li>
+					<li class="lii"><a href="###">担保待签</a></li>
+					<li class="lii"><a href="###">我的担保</a></li>
+					<li class="lii"><a href="###">我被担保</a></li>
 					<li class="xian"></li>
 				</ul>
 				<ul class="list_3">
-					<li><a href="###">待签欠单</a></li>
-					<li><a href="###">到期支付</a></li>
-					<li><a href="###">我的欠单</a></li>
+					<li class="lii"><a href="###">待签欠单</a></li>
+					<li class="lii"><a href="###">到期支付</a></li>
+					<li class="lii"><a href="###">我的欠单</a></li>
 				</ul>
 			</div>
 			
-			
+			<!--右边的内容-->
 			<div class="right">
 				<div class="right_box">
-					<div class="frient">
-						<div class="frient_right">				
-								<p></p><span>失信程度</span>
-								<p></p><span>守信程度</span>
-								<p></p><span>最近30天签单次数</span>
+					<div class="chose">
+						<div class="chose-box">
+							<img src="img/chose_03.png">
+							<a href="###">点击选择签单人</a>
 						</div>
-						<div class="frient_center">
-							<img src="img/frient.png"><span>好友列表</span>
+					</div>
+					<!-- right_box的右边-->
+					<div class="right_box_left">
+						<div class="right_box_left_1">
+							<span class="sp">欠款合计:</span>
+							<input type="text">
+							<span>(元)</span>
+						</div>
+						<div class="right_box_left_2">
+							<span class="sp">付款日期:</span>
+							<input type="text"><span>年</span>
+							<input type="text"><span>月</span>
+							<input type="text"><span>日</span>
+						</div>
+						<div class="right_box_left_3">
+							<span class="sp">到期时间:</span>
+							<input type="text"><span>年</span>
+							<input type="text"><span>月</span>
+							<input type="text"><span>日</span>
 						</div>
 						
+						<div class="huank xl">
+							<span class="hk">还款形式</span>
+							<input type="radio" name="hk-change">
+							<span>分期</span>
+							<input type="radio" name="hk-change">
+							<span>整期</span>
+						</div>
+						
+						<div class="lixi xl">
+							<span class="hk">利息</span>
+							<input type="radio" name="lixi-change">
+							<span>不需要</span>
+							<input type="radio" name="lixi-change">
+							<span>需要</span>
+						</div>
+						
+						<div class="dbr xl">
+							<span class="hk">担保人</span>
+							<input type="radio" name="dbr-change">
+							<span>不需要</span>
+							<input type="radio" name="dbr-change">
+							<span>需要</span>
+						</div>
+					</div>
+					<!--右边-->
+					<div class="right_box_right">
+						<div class="right_box_right_div">
+							<span>单据图片</span><span>(每次限上传4张)</span>
+						</div>
+						<div class="gs-div-bottom">		
+								<div class="gs-front">
+									<p><span class="gs-sp">拖拽</span><span>单据图片</span><span class="gs-sp">至此</span></p>
+									<p>或</p>
+									<p><a href="###">上传单据</a></p>
+									<p>只支持jpg格式，体积在3MB一下</p>
+								</div>
+						</div>
+						
+						
+					</div>
+					<div class="qd">
+						<a href="###">发送签单</a>
 					</div>
 				</div>
 			</div>
@@ -154,5 +212,21 @@
 		$(".yingcan")[0].style.display="none";
 		$(".hei")[0].style.display="none";
 	}
+	//角色列表选择
+//	console.log($(".lii"))
+	$(".lii")[0].style.background="rgb(86,158,255)";
+	for(var i=0;i<$(".lii").length;i++){
+		$(".lii")[i].onmousedown=function(){
+			console.log("a")
+			for(var j=0;j<$(".lii").length;j++){
+				$(".lii")[j].style.background="white";
+				$(".lii")[j].children[0].style.color="black";
+			}	
+			this.style.background="rgb(86,158,255)";
+			this.children[0].style.color="white";
+		}
+	}
+
 	</script>
 </html>
+

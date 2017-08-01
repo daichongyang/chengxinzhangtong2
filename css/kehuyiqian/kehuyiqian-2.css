@@ -275,10 +275,9 @@ input{
 	/*border-bottom:2px solid gray;*/
 }
 .frient_center{
-	width:19%;
+	width:23%;
 	height:100%;
-	float:right;
-	margin-right:100px;
+	margin:0 auto;
 }
 .frient_center span{
 	float:left;
@@ -289,7 +288,7 @@ input{
 }
 .frient_center img{
 	
-	margin-top:28px;
+	margin-top:18px;
 	float:left;
 }
 .frient_right{
@@ -363,6 +362,16 @@ input{
 	/*padding-top:50px;*/
 	padding-bottom:16px;
 	font-size:30px;
+}
+.show-1{
+	float:left;
+	width:34%;
+}
+.change{
+	color: orange;
+}
+.gsname span{
+	font-size:16px;
 }
 .frient-lists .right-pic{
 	float:left;

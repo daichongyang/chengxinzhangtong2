@@ -21,9 +21,9 @@
 						
 						<div class="login-div">
 							<ul class="login-ul">
-								<li><a href="../首页/首页.html">登录</a></li>
+								<li><a href="###">登录</a></li>
 								<li><a href="###">|</a></li>
-								<li><a href="###" class="reg">注册</a></li>
+								<li><a href="register2.html" class="reg">注册</a></li>
 							</ul>
 						</div>
 						
@@ -60,66 +60,7 @@
 						<div class="next"><a href="###">下一步</a></div>
 					</div>
 					
-					<!---------注册------------>
-					<div class="register">
-
-						<div class="register-div">
-							<ul class="register-ul">
-								<li><a href="###" class="log">登录</a></li>
-								<li><a href="###">|</a></li>
-								<li><a href="###" class="regg">注册</a></li>
-							</ul>
-						</div>
-						<!--信息输入-->						
-							<div class="infor">
-							<!--登录的部分-->
-								<div class="infor-login">
-									<div class="infor_11">
-										<ul class="infor-ul-1">
-											<li><img src="img/zhanghao_03.png"></li>
-											<li>账号</li>
-										</ul>
-										<input type="text" name="user" placeholder="请输入账号">
-									
-									</div>
-									<!--手机号注册-->
-									<div class="infor_22">
-										<ul class="infor-ul-2">
-											<li><img src="img/mphone.png"></li>
-											<li>手机号</li>
-										</ul>
-										<input type="text" class="phone" placeholder="请输入手机号">
-										<img class="redX" src="img/redX.png">
-									</div>
-									<!--验证码-->
-									<div class="infor_33">
-										<ul class="infor-ul-3">
-											<li><img src="img/yanzheng.png"></li>
-											<li>验证码</li>
-										</ul>
-										<input type="text" class="code" name="user" placeholder="输入验证码">
-										<div class="huoqu"><a href="###">获取验证码</a></div>
-									</div>
-									
-								<!--密码-->
-									<div class="infor_4">
-										<ul class="infor-ul-4">
-											<li><img src="img/password_03.png"></li>
-											<li>密码</li>
-										</ul>
-										<input type="password" class="password" placeholder="请输入密码">
-									</div>
-									<!--协议-->
-									<div class="infor_5">
-										<input type="checkbox">
-										<p>我已经阅读并同意《平台注册服务协议》和《平台注册服务协议》</p>
-									</div>
-								</div>					
-							</div>
-		
-						<!--下一步-->
-						<div class="next"><a href="register.html">下一步</a></div>
-					</div>
+				
 					</form>
 					</div>
 				</div>
@@ -137,49 +78,49 @@
 	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 	<script>
 		//点击注册，移动box内部窗口
-		$(".reg")[0].onmousedown=function(){
-			$(".mbox")[0].style.left="-420px";
-			$(".log")[0].style.color="darkgray";
-			$(".regg")[0].style.color="rgb(86,158,255)";
-		}
-		$(".log")[0].onmousedown=function(){
-			$(".mbox")[0].style.left="0";
-		}
-		//点击获取验证码
-		var i=60;//点击获取验证后的读秒数
-		var time="";
-		var tt=1;//判断读秒时是否可以点击
-		var tet=/^1[3458]\d{9}$/;
-		$(".phone")[1].onblur=function(){
-			console.log("aaa")
-			var value=$(".phone").val();
-			if(!tet.exec(value)){
-				$(".redX")[0].style.display="block";
-			}else{
-				$(".redX")[0].style.display="none";
-				$(".huoqu")[0].style.background="rgb(86,158,255)";
-				
-				$(".huoqu")[0].onmousedown=function(){
-					var self=this;
-					if(tt==1){
-						time=setInterval(function(){
-							tt=0;
-							self.children[0].innerHTML="已发送("+i+"s)";
-							
-							if(i==0){
-								clearInterval(time);
-							self.children[0].innerHTML="重新发送";
-							i=60;
-							tt=1
-							}
-							i--;
-						},1000)
-						
-					}
-				}
-				
-			}
-		}
+//		$(".reg")[0].onmousedown=function(){
+//			$(".mbox")[0].style.left="-420px";
+//			$(".log")[0].style.color="darkgray";
+//			$(".regg")[0].style.color="rgb(86,158,255)";
+//		}
+//		$(".log")[0].onmousedown=function(){
+//			$(".mbox")[0].style.left="0";
+//		}
+//		//点击获取验证码
+//		var i=60;//点击获取验证后的读秒数
+//		var time="";
+//		var tt=1;//判断读秒时是否可以点击
+//		var tet=/^1[3458]\d{9}$/;
+//		$(".phone")[1].onblur=function(){
+//			console.log("aaa")
+//			var value=$(".phone").val();
+//			if(!tet.exec(value)){
+//				$(".redX")[0].style.display="block";
+//			}else{
+//				$(".redX")[0].style.display="none";
+//				$(".huoqu")[0].style.background="rgb(86,158,255)";
+//				
+//				$(".huoqu")[0].onmousedown=function(){
+//					var self=this;
+//					if(tt==1){
+//						time=setInterval(function(){
+//							tt=0;
+//							self.children[0].innerHTML="已发送("+i+"s)";
+//							
+//							if(i==0){
+//								clearInterval(time);
+//							self.children[0].innerHTML="重新发送";
+//							i=60;
+//							tt=1
+//							}
+//							i--;
+//						},1000)
+//						
+//					}
+//				}
+//				
+//			}
+//		}
 
 	</script>
 </html>
