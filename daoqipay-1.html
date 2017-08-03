@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/selfqd/selfqd-2.css" />
+		<link rel="stylesheet" href="css/daoqipay/daoqipay-1.css" />
 	</head>
 	<body>
 		<div class="hei"></div>
@@ -71,6 +71,105 @@
 			</div>
 			
 			<!--右边的内容-->
+				<!--支付密码窗口----------------------------------->
+			<!--<div class="box">
+			<div class="mbox">-->
+			
+				
+			<div class="Wndow">
+				<img class="x" src="img/x.png">
+				<div class="Wndow-dx"><img src="img/zhifu.png">支付密码</div>
+				<div class="wndow-box">
+					<div class="zhifu"><input type="password" placeholder="请输入支付密码"></div>
+					<div class="cuowu"><img src="img/cuowu_03.png"><span>密码错误请重新输入</span></div>
+					<div class="quedin"><a href="###">确定</a></div>
+					<div class="quxiao"><a href="###">取消</a></div>
+				</div>
+			</div>
+			
+			
+				<!--微信二维码页面-->
+			<div class="wx-erweima">
+				<img class="x" src="img/x.png">
+				<p>请用手机微信扫码支付</p>
+				<img class="ewm-pic" src="img/weixin_zhifubao.png">
+				<p class="yanse"></p>
+			</div>
+				
+				
+				<!--支付宝二维码页面-->
+			<div class="zfb-erweima">
+				<img class="x" src="img/x.png">
+				<p>请用手机支付宝扫码支付</p>
+				<img class="ewm-pic" src="img/weixin_zhifubao.png">
+				<p class="yanse"></p>
+			</div>
+				<!--银行卡支付-->
+			<div class="add-yhk">
+				<img class="x" src="img/x.png">
+				<div class="add-yhk-dx">选择银行卡</div>
+				<div class="add-yhk-box">
+					<div><a href="###">修改支付密码</a></div>
+					<div><img src="img/gs.png"><input type="text" /></div>
+					<div><img src="img/js.png"><input type="text" /></div>
+					<div><img src="img/zh.png"><input type="text" /></div>
+					<div><img src="img/ny.png"><input type="text" /></div>
+					<div class="add-yhk-div"><a href="###">取消</a></div>
+				</div>
+			</div>
+			<!--支付部分-->
+
+			<div class="pay">
+				<div class="titlee">
+					<div class="pay-titlee1">
+						<span>财富余额：</span>
+						<input type="text" value="6232526.62"/>
+						<span>(元)</span>
+					</div>	
+					<div class="pay-titlee2">
+						<span>总计：</span>
+						<input type="text" value="83.00"/>
+						<span>(元)</span>
+					</div>
+				</div>
+				<div class="payy">
+					<div class="payy_1">
+						<input class="radio_ye" type="radio" name="pay-change"/>
+						<img src="img/pay_03.png">
+						<span class="pay_span">
+							<p><a class="yuer" href="###">余额支付</a></p>
+							<p class="pay-p">快捷，方便，安全</p>
+						</span>
+					
+						<input class="radio_zfb" type="radio"  name="pay-change"/>
+						<img src="img/pay_09.png">
+						<span class="pay_span">
+							<p><a class="zfb" href="###">支付宝</a></p>
+							<p class="pay-p">支持有支付宝，网银的用户使用</p>
+						</span>
+						
+					</div>
+					<div class="payy_2">
+						<input class="radio_wx" type="radio"  name="pay-change"/>
+						<img src="img/pay_05.png">
+						<span class="pay_span">
+							<p><a class="weixin" href="###">微信支付</a></p>
+							<p class="pay-p">使用微信支付，安全便捷</p>
+						</span>
+					
+						<input class="radio_yhk" type="radio"  name="pay-change"/>
+						<img src="img/pay_12.png">
+						<span class="pay_span">
+							<p><a class="yhk" href="###">银行卡支付</a></p>
+							<p class="pay-p">支持有支付宝，网银的用户使用</p>
+						</span>
+					</div>
+					<div class="js"><a href="###">结算</a></div>
+					<div class="qux"><a href="###">取消</a></div>
+				</div>
+			</div>
+			
+			<!--展示部分-->
 			<div class="right">
 				<div class="right_box">
 					<div class="chose">
@@ -80,7 +179,7 @@
 						<img src="img/frient-pic.png">
 						<div class="gsname">
 							<!--<p>资方：&nbsp;JIRNES</p>-->
-							<p>深圳跃进科技有限公司</p>
+							<p>欠方：深圳跃进科技有限公司</p>
 							<div class="show-1">
 								<span>借款额：</span>
 								<span class="change">83</span>
@@ -127,7 +226,7 @@
 					<div class="frient-lists">
 						<img src="img/frient-pic.png">
 						<div class="gsname">
-							<p>担保方：&nbsp;JIRNES</p>
+							<p>资方：&nbsp;JIRNES</p>
 							<p>深圳跃进科技有限公司</p>
 						</div>
 						<div class="right-pic">
@@ -227,23 +326,7 @@
 						
 						
 					</div>
-					<div class="right_box_foot">
-						<div class="foot_div">
-							<span>已还金额</span>
-							<input type="text" value="44.0">
-							<span>(元)</span>
-						</div>
-						<div  class="foot_div">
-							<span>待还金额</span>
-							<input type="text" value="44.11"> 
-							<span>(元)</span>
-						</div>
-						<div class="foot_div">
-							<span>待还期数</span>
-							<input type="text" value="5">
-							<span>(元)</span>
-						</div>
-				</div>
+					
 			</div>
 
 		</div>
@@ -278,17 +361,13 @@
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 	<script>
-	//点击弹框
-//		$(".qx")[0].children[0].onclick=function(){
-//			console.log("aa")
-//			$(".tanchu-1")[0].style.display="block";
-//		}
-//		$(".tanchu-1-x")[0].onclick=function(){
-//			$(".tanchu-1")[0].style.display="none";
-//		}
-//		$(".tanchu-1-d")[0].onclick=function(){
-//			$(".tanchu-1")[0].style.display="none";
-//		}
+	
+	for(var i=0;i<$(".x").length;i++){
+		$(".x")[i].onclick=function(){
+			this.parentElement.style.display="none";
+		
+		}
+	}
 		//logo导航栏部分列表的js
 	for(var i=0;i<$(".nav-list>ul>li").length;i++){
 			$(".nav-list>ul>li")[i].onmouseover=function(){
@@ -314,6 +393,43 @@
 		$(".hei")[0].style.display="block";
 		console.log($(".hei").height())
 	}
+	
+	//中间隐藏部分的操作
+	//余额支付
+	$(".yuer")[0].onmousedown=function(){
+		$(".Wndow")[0].style.display="block";	
+		$(".radio_ye").attr("checked",true);
+	}
+	$(".quxiao")[0].onmousedown=function(){
+		$(".Wndow")[0].style.display="none";
+		$(".radio_ye").attr("checked",false);
+	}
+	//微信和支付宝支付
+	$(".weixin")[0].onmousedown=function(){
+		$(".wx-erweima")[0].style.display="block";
+		$(".radio_wx").attr("checked",true);
+	}
+	$(".zfb")[0].onmousedown=function(){
+		$(".zfb-erweima")[0].style.display="block";
+		$(".radio_zfb").attr("checked",true);
+	
+	}
+	//银行卡支付
+	$(".yhk")[0].onmousedown=function(){
+		$(".add-yhk")[0].style.display="block";	
+		$(".radio_yhk").attr("checked",true);
+	}
+	$(".add-yhk-div")[0].onmousedown=function(){
+		$(".add-yhk")[0].style.display="none";
+		$(".radio_yhk").attr("checked",false);
+	}
+//  $(".add-yhk-div")[0].onmousedown=function(){
+//  	$(".mbox")[0].style.left="-497px";
+//  }
+//   $(".add-code-quedin")[0].onmousedown=function(){
+//  	$(".mbox")[0].style.left="0px";
+//  }
+   
 	//二维码
 	var count=0;
 	$(".a-phone")[0].onmousedown=function(){
@@ -332,7 +448,7 @@
 	}
 	//角色列表选择
 //	console.log($(".lii"))
-	$(".lii")[4].style.background="rgb(86,158,255)";
+	$(".lii")[10].style.background="rgb(86,158,255)";
 	for(var i=0;i<$(".lii").length;i++){
 		$(".lii")[i].onmousedown=function(){
 			console.log("a")

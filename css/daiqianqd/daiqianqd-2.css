@@ -166,7 +166,7 @@ input{
 .content{
 	position:relative;
 	width:100%;
-	height:1200px;
+	height:1402px;
 	background:lightgray;
 }
 /*左边的内容部分*/
@@ -270,7 +270,7 @@ input{
 	background:white;
 	float:right;
 	width:67%;
-	height:1150px;
+	height:1352px;
 }
 .right_box{
 	position:relative;
@@ -282,7 +282,7 @@ input{
 }
 .chose{
 	width:100%;
-	height:200px;
+	height:404px;
 
 	border-bottom:1px solid gray;
 }
@@ -305,7 +305,7 @@ input{
 }*/
 .boxx{
 	width:100%;
-	height:100%;
+	height:200px;
 	border:1px solid lightgray;
 	overflow:hidden;
 }
@@ -461,7 +461,7 @@ input{
 	padding-left:5%;
 	font-size:20px;
 	border-radius:8px;
-	border:1px solid lightgray;
+	/*border:1px solid lightgray;*/
 	margin-bottom:20px;
 }
 
@@ -473,8 +473,8 @@ input{
 	margin-top:42px;
 	margin-left:200px;
 	margin-right:10px;
-	font-size:20px;
 	width:40px;
+	font-size:20px;
 	outline:none;
 	border:0px;
 	/*margin-left:10px;*/
@@ -485,7 +485,7 @@ input{
 	padding-left:5%;
 	font-size:20px;
 	border-radius:8px;
-	border:1px solid lightgray;
+	/*border:1px solid lightgray;*/
 	margin-bottom:20px;
 }
 .right_box_left_2 input{
@@ -503,7 +503,7 @@ input{
 	font-size:20px;
 	border-radius:8px;
 	margin-bottom:20px;
-	border:1px solid lightgray;
+	/*border:1px solid lightgray;*/
 }
 .right_box_left_3 input{
 	outline:none;
@@ -520,12 +520,15 @@ input{
 }
 .huank input{
 	margin-left:80px;
+	font-size:20px;
+	width:40px;
+	border:1px solid white;
 }
 .lixi input{
-	margin-left:90px;
+	margin-left:128px;
 }
 .dbr input{
-	margin-left:80px;
+	margin-left:108px;
 }
 .hk{
 	margin-left:5%;
@@ -536,7 +539,7 @@ input{
 	padding-left:5%;
 	font-size:20px;
 	border-radius:8px;
-	border:1px solid lightgray;
+	/*border:1px solid lightgray;*/
 	margin-bottom:20px;
 	display:block;
 }
@@ -552,47 +555,15 @@ input{
 .yc .yc_input{
 	width:60px;
 }
-.zq{
-	width:95%;
-	height:14%;
-	padding-left:5%;
+.dbr-change{
 	font-size:20px;
-	border-radius:8px;
-	/*border:1px solid lightgray;*/
-	margin-bottom:20px;
-	display:block;
-}
-.zq input{
-	width:20px;
-	padding-left:10px;
+	width:60px;
 	border:1px solid white;
-	/*border-bottom:1px solid gray;*/
-	font-size:18px;
-	margin-left:10px;
-	margin-top:35px;
 }
-.lx{
-	position:relative;
-	width:95%;
-	height:10%;
-	padding-left:5%;
+.lixi-change{
 	font-size:20px;
-	border-radius:8px;
-	border:1px solid lightgray;
-	margin-bottom:20px;
-	display:block;
-	
-}
-
-.lx input{
-	width:50%;
-	height:50%;
-	position:absolute;
-	top:12px;
-	left:150px;
-	padding-left:20px;
-	border:0px;
-	font-size:20px;
+	width:60px;
+	border:1px solid white;
 }
 /*right_box的左边*/
 .right_box_right{
@@ -776,7 +747,6 @@ input{
 	font-size:22px;
 	line-height:52px;
 }
-/*发送新签单弹出框*/
 .tanchu-1{
 	position:absolute;
 	bottom:485px;
@@ -788,52 +758,25 @@ input{
 	z-index:100;
 	display:none;
 }
-.tanchu-1 p{
-	font-size:25px;
+.tanchu-1 p:nth-child(1){
+	font-size:20px;
 	margin-top:50px;
 	text-align:center;
 }
-.tanchu-1 a:nth-child(2){
-	position:absolute;
-	bottom:30px;
-	left:56px;
-	font-size:22px;
+.tanchu-1 p:nth-child(2){
+	font-size:20px;
+	margin-top:5px;
+	text-align:center;
 }
 .tanchu-1 a:nth-child(3){
 	position:absolute;
 	bottom:30px;
-	left:270px;
-	font-size:22px;
+	left:168px;
+	font-size:20px;
+	color:rgb(86,158,255);
+	text-decoration:underline;
 }
-.tanchu-2{
-	position:absolute;
-	bottom:485px;
-	left:1062px;
-	width:400px;
-	height:200px;
-	border:1px solid gray;
-	background:white;
-	z-index:100;
-	display:none;
-}
-.tanchu-2 p{
-	font-size:25px;
-	margin-top:50px;
-	text-align:center;
-}
-.tanchu-2 a:nth-child(2){
-	position:absolute;
-	bottom:30px;
-	left:56px;
-	font-size:22px;
-}
-.tanchu-2 a:nth-child(3){
-	position:absolute;
-	bottom:30px;
-	left:270px;
-	font-size:22px;
-}
-/*取消修改弹框*/
+
 /*底部部分*/
 
 #footer{

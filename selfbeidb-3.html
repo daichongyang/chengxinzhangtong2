@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="css/kehudaiqian/kehudaiqian-4.css" />
+		<link rel="stylesheet" href="css/selfbeidb/selfbeidb-3.css" />
 	</head>
 	<body>
 		<div class="hei"></div>
-		<div class="hei_1"><img src="img/images/sctp_03.png"></div>
-		<div class="hei_1"><img src="img/images/sctp_03.png"></div>
-		<div class="hei_1"><img src="img/images/sctp_03.png"></div>
-		<div class="hei_1"><img src="img/images/sctp_03.png"></div>
+		<!--<div class="hei_1"><img src="img/sctp_03.png"></div>
+		<div class="hei_1"><img src="img/sctp_03.png"></div>
+		<div class="hei_1"><img src="img/sctp_03.png"></div>
+		<div class="hei_1"><img src="img/sctp_03.png"></div>-->
 		<!--头部-->
+		<!--这是未完成二级页面------------------------------------------------------>
 		<div id="header">
 			<!--顶部导航栏-->
 			<div class="top">
@@ -44,6 +45,7 @@
 		<p class="hh"></p>
 		<!--中间内容---------->
 		<div class="content">
+			<img class="ywc" src="img/yiwancheng_03.png">
 			<!--左边列表-->
 			<div class="left">
 				<ul class="list_1">
@@ -73,12 +75,13 @@
 			<div class="right">
 				<div class="right_box">
 					<div class="chose">
+						
 						<div class="boxx">
 					<div class="frient-lists">
 						<img src="img/frient-pic.png">
 						<div class="gsname">
-							<p>BOBI&nbsp;JIRNES</p>
-							<p>深圳跃进科技有限公司</p>
+							<!--<p>资方：&nbsp;JIRNES</p>-->
+							<p>资方：深圳跃进科技有限公司</p>
 							<div class="show-1">
 								<span>借款额：</span>
 								<span class="change">83</span>
@@ -120,6 +123,34 @@
 						</div>
 					</div>	
 					</div>
+					<!-------->
+					<div class="boxx">
+					<div class="frient-lists">
+						<img src="img/frient-pic.png">
+						<div class="gsname">
+							<!--<p>欠方：&nbsp;JIRNES</p>-->
+							<p>欠方：深圳跃进科技有限公司</p>
+						</div>
+						<div class="right-pic">
+							<div class="timer">
+								<span>189</span>
+								<p>2016-2-3</p>
+							</div>
+							<div class="heji">
+								<p>138</p>
+								<p></p>
+								<p>3</p>
+								<p>合计</p>
+							</div>
+							<div class="tianshu">
+								<p>38</p>
+								<p class="fenge"></p>
+								<p></p>
+								<p>30天</p>
+							</div>
+						</div>
+					</div>	
+					</div>
 					</div>
 					<!-- right_box的右边-->
 					<div class="right_box_left">
@@ -130,24 +161,41 @@
 						</div>
 						<div class="right_box_left_2">
 							<span class="sp">付款日期:</span>
-							<input type="text"><span>年</span>
-							<input type="text"><span>月</span>
-							<input type="text"><span>日</span>
+							<input type="text" value="80"><span>年</span>
+							<input type="text" value="2"><span>月</span>
+							<input type="text" value="2"><span>日</span>
 						</div>
 						<div class="right_box_left_3">
 							<span class="sp">到期时间:</span>
-							<input type="text"><span>年</span>
-							<input type="text"><span>月</span>
-							<input type="text"><span>日</span>
+							<input type="text" value="2"><span>年</span>
+							<input type="text" value="2"><span>月</span>
+							<input type="text" value="2"><span>日</span>
 						</div>
 						
 						<div class="huank xl">
 							<span class="hk">还款形式</span>
-							<input type="radio" checked="flase" name="hk-change">
-							<span>分期</span>
-							<input type="radio" checked="true" name="hk-change">
-							<span>整期</span>
+							<input type="text" checked="true" value="分期" name="hk-change">
+							
+							
 							<!--隐藏部分-->
+						</div>
+						
+						
+						<div class="lixi xl">
+							<span class="hk">利息</span>
+							<input type="text" value="需要" name="lixi-change" class="lixi-change">
+						
+						</div>
+						<div class="lixi xl ll">
+							<span class="hk">担保年利率</span>
+							<input type="text" value="12.9%" name="lixi-change" class="lixi-change">
+						
+						</div>
+						
+						<div class="dbr xl">
+							<span class="hk">担保费用</span>
+							<input type="text" value="9.96" name="dbr-change" class="dbr-change">
+							<span>(元)</span>
 						</div>
 						<div class="yc">
 							<span>共计</span><input class="yc_input" type="text"  value="20"><span>元，分</span>
@@ -155,24 +203,10 @@
 							<span>期完成还款，次月起每月</span><input type="text" value="20">
 							<span>日还款，每次还款</span><input class="yc_input" type="text" value="20"><span>元。</span>
 						</div>
-						
-						<div class="lixi xl">
-							<span class="hk">利息</span>
-							<input type="radio" name="lixi-change">
-							<span>不需要</span>
-							<input type="radio" checked="true" name="lixi-change">
-							<span>需要</span>
-						</div>
-						<div class="lx">
-							<input type="text" placeholder="请输入利率">
-						</div>
-						
 						<div class="dbr xl">
-							<span class="hk">担保人</span>
-							<input type="radio" name="dbr-change">
-							<span>不需要</span>
-							<input type="radio" name="dbr-change">
-							<span>需要</span>
+							<span class="hk">每月应还金额</span>
+							<input type="text" value="9.96" name="dbr-change" class="dbr-change">
+							<span>(元)</span>
 						</div>
 					</div>
 					<!--右边-->
@@ -185,40 +219,20 @@
 								
 								<div class="gs-front-change">
 									
-									<span><img src="img/chacha.png" class="chacha"/><img src="img/images/sctp_03.png"></span>
-									<span><img src="img/chacha.png" class="chacha"/><img src="img/images/sctp_03.png"></span>
-									<span><img src="img/chacha.png" class="chacha"/><img src="img/images/sctp_03.png"></span>
-									<span><img src="img/chacha.png" class="chachaa"/><img src="img/images/sctp_03.png"></span>
-									<!--<p class="pp_1"><a href="###">上传单据</a></p>
-									<p class="pp_2">只支持jpg格式，体积在3MB一下</p>-->
+									<span><img src="img/chacha.png" class="chacha"/><img src="img/sctp_03.png"></span>
+									<span><img src="img/chacha.png" class="chacha"/><img src="img/sctp_03.png"></span>
+									<span><img src="img/chacha.png" class="chacha"/><img src="img/sctp_03.png"></span>
+									<span><img src="img/chacha.png" class="chachaa"/><img src="img/sctp_03.png"></span>
 								</div>
 						</div>
 						
 						
 					</div>
-					<div class="qd">
-						<a href="###">发送新签单</a>
-					</div>
-					<div class="qx">
-						<a href="###">取消修改</a>
-					</div>
-				</div>
+					
 			</div>
-			<!--发送新签单弹出框-->
-			<div class="tanchu-1">
-				<p>确认发送修改后签单？</p>
-				<a href="###" class="tanchu-1-x">取消</a>
-				<a href="###" class="tanchu-1-d">确定</a>
-			</div>
-			<!--取消修改弹框-->
-			<div class="tanchu-2">
-				<p>确认取消签单修改？</p>
-				<a href="###" class="tanchu-2-x">取消</a>
-				<a href="###" class="tanchu-2-d">确定</a>
-			</div>
+
 		</div>
-	
-		
+		</div>
 		<!--底部部分------------------------->
 		<div id="footer">
 			<div class="yingcan">
@@ -250,28 +264,16 @@
 	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 	<script>
 	//点击弹框
-		$(".qd")[0].children[0].onclick=function(){
-			
-			$(".tanchu-1")[0].style.display="block";
-			$(".tanchu-2")[0].style.display="none";
-		}
-		$(".tanchu-1-x")[0].onclick=function(){
-			$(".tanchu-1")[0].style.display="none";
-		}
-		$(".tanchu-1-d")[0].onclick=function(){
-			$(".tanchu-1")[0].style.display="none";
-		}
-		//*************************
-		$(".qx")[0].children[0].onclick=function(){
-			$(".tanchu-2")[0].style.display="block";
-			$(".tanchu-1")[0].style.display="none";
-		}
-		$(".tanchu-2-x")[0].onclick=function(){
-			$(".tanchu-2")[0].style.display="none";
-		}
-		$(".tanchu-2-d")[0].onclick=function(){
-			$(".tanchu-2")[0].style.display="none";
-		}
+//		$(".qx")[0].children[0].onclick=function(){
+//			console.log("aa")
+//			$(".tanchu-1")[0].style.display="block";
+//		}
+//		$(".tanchu-1-x")[0].onclick=function(){
+//			$(".tanchu-1")[0].style.display="none";
+//		}
+//		$(".tanchu-1-d")[0].onclick=function(){
+//			$(".tanchu-1")[0].style.display="none";
+//		}
 		//logo导航栏部分列表的js
 	for(var i=0;i<$(".nav-list>ul>li").length;i++){
 			$(".nav-list>ul>li")[i].onmouseover=function(){
@@ -315,7 +317,7 @@
 	}
 	//角色列表选择
 //	console.log($(".lii"))
-	$(".lii")[1].style.background="rgb(86,158,255)";
+	$(".lii")[7].style.background="rgb(86,158,255)";
 	for(var i=0;i<$(".lii").length;i++){
 		$(".lii")[i].onmousedown=function(){
 			console.log("a")
@@ -336,6 +338,10 @@
 //}
 	</script>
 </html>
+
+
+
+
 
 
 

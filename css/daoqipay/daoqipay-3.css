@@ -1,0 +1,575 @@
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:black;
+}
+body{
+	position:relative;
+	z-index:10;
+}
+input{
+	outline:none;
+}
+.hh{
+	height:20px;
+	width:100%;
+	background:rgb(226,226,226);
+	margin-top:34px;
+	
+}
+.hei{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+	z-index:999;
+	background:rgba(0,0,0,.1);
+}
+/*顶部导航栏*/
+#header{
+	width:100%;
+	height:230px;
+}
+.top{
+	width:100%;
+	height:68px;
+	background:rgb(226,226,226);
+}
+.top-ch{
+	width:1230px;
+	height:100%;
+	margin:0 auto;
+}
+.top-ch-left{
+	float:left;
+	width:22%;
+	height:100%;
+	background:url(../../img/phone.png)no-repeat left;
+	background-size:42px 42px;
+}
+/*热线电话*/
+.top-ch-left p{
+	float:right;
+	width:50%;
+	font-size:16px;
+	padding-top:9%;
+}
+.top-ch-left p:nth-child(1){
+	font-size:20px;
+}
+.top-ch-left p:nth-child(2){
+	width:30%;
+}
+/*登录。注册。手机客户端的样式*/
+.top-ul-right{
+	float:right;
+	padding-top:2%;
+	
+}
+
+.top-ul-right li{
+	float:left;
+	padding:4px 14px;
+	/*border:1px solid gray;*/
+	border-radius:10px;
+	margin:0 6px;
+}
+.top-ul-right li:nth-child(3){
+	margin:0;
+	padding:4px 0;
+}
+.top-ul-right li:nth-child(4){
+	padding:4px 0;
+	position:relative;
+}
+.top-ul-right li:nth-child(1){
+	background:rgb(219,0,17);
+}
+.top-ul-right li:nth-child(2){
+	background:rgb(90,163,223);
+}
+.top-ul-right li:nth-child(1) a{
+	display:block;
+	color:white;	
+}
+.top-ul-right li:nth-child(2) a{
+	display:block;
+	color:white;
+}
+/*二维码*/
+.a-phone{
+	display:block;
+	/*position:relative;*/
+}
+.er-phone{
+	position:absolute;
+	top:53px;
+	left:-33px;
+	
+	display:none;
+	width:150px;
+	height:176px;
+	background:url(../../img/erweima.png)no-repeat;
+}
+/*logo导航栏部分的样式*/
+.nav{
+	width:1630px;
+	height:162px;
+	/*border-bottom:1px solid black;*/
+	margin:0 auto;
+}
+.logo{
+	float:left;
+	width:288px;
+	height:81px;
+	background:url(../../img/logo.png)no-repeat center;
+	padding-top:7%;
+}
+.nav-list{
+	float:right;
+	padding-top:8%;
+}
+.nav-list ul li{
+	float:left;
+	padding:5px 40px;
+	border-bottom:5px solid white;
+	transition: all 2s;
+}
+.nav-list ul li:nth-child(1){
+	border-bottom:5px solid dodgerblue;
+}
+.nav-list ul li a{
+	font-size:40px;
+}
+.nav-list ul li:nth-child(1) a{
+	color:dodgerblue;
+}
+/*中间内容*/
+.content{
+	width:100%;
+	height:1250px;
+	background:lightgray;
+}
+/*左边的内容部分*/
+.list_1 .xian{
+	width:100%;
+	height:10px;
+	background:lightgray;
+	border:0;
+}
+.list_2 .xian{
+	border:0;
+	width:100%;
+	height:10px;
+	background:lightgray;
+}
+.left{
+	background:white;
+	float:left;
+	width:17%;
+	margin-left:100px;
+}
+
+.list_1{
+	width:100%;
+	height:44%;
+}
+
+.list_1 li{
+	width:100%;
+	height:58px;
+	border-top:1px solid darkgray;
+	/*padding:3% 0;*/
+}
+.list_1 li:nth-child(1) a{
+	float:left;
+	width:30%;
+}
+.list_1 li:nth-child(1) span{
+	float:left;
+	margin-top:22px;
+	margin-left:4px;
+}
+.list_1 li:nth-child(1) input{
+	float:left;
+	margin-top:26px;
+}
+.list_1 li:nth-child(1) .input_2{
+	margin-left:20px;
+}
+.list_1 li:nth-child(6){
+	border-bottom: 1px solid darkgray;
+}
+.list_1 li a{
+	display:block;
+	width:80%;
+	height:100%;
+	margin-left:10%;
+	line-height:58px;
+}
+.list_2{
+	width:100%;
+	/*height:22%;*/
+	margin-top:30px;
+}
+.list_2 li{
+	width:100%;
+	height:58px;
+	border-top:1px solid darkgray;
+}
+.list_2 li a{
+	display:block;
+	width:80%;
+	height:100%;
+	margin-left:10%;
+	line-height:58px;
+}
+.list_2 li:nth-child(3){
+	border-bottom: 1px solid darkgray;
+}
+.list_3{
+	width:100%;
+	height:25%;
+	margin-top:30px;
+}
+.list_3 li{
+	width:100%;
+	height:58px;
+	border-top:1px solid darkgray;
+}
+.list_3 li a{
+	display:block;
+	width:80%;
+	height:100%;
+	margin-left:10%;
+	line-height:58px;
+}
+.list_3 li:nth-child(3){
+	border-bottom: 1px solid darkgray;
+}
+
+
+/*支付成功后弹出*/
+.seccses{
+	position:absolute;
+	top:672px;
+	left:1088px;
+	width:400px;
+	height:300px;
+	background:white;
+	border:1px solid darkgray;
+	z-index:1000;
+	/*display:none;*/
+}
+.seccses img:nth-child(2){
+	margin-top:30px;
+	margin-left:120px;
+	width:150px;
+}
+.seccses p{
+	margin-top:20px;
+	color:darkgray;
+	font-size:35px;
+	text-align:center;
+}
+/*右边的内容部分*/
+.right{
+	background:white;
+	float:right;
+	width:67%;
+	height:1250px;
+}
+.right_box{
+	position:relative;
+	width:85%;
+	height:97.4%;
+	border:1px solid darkslategray;
+	margin:0 auto;
+	margin-top:2%;
+}
+.frient{
+	width:100%;
+	height:100px;
+	/*border-bottom:2px solid gray;*/
+}
+.frient_center{
+	width:23%;
+	height:100%;
+	margin:0 auto;
+}
+.frient_center span{
+	float:left;
+	display:block;
+	font-size:30px;
+	margin-top:25px;
+	margin-left:10px;
+}
+.frient_center img{
+	
+	margin-top:18px;
+	float:left;
+}
+.gongji{
+	width:100%;
+	height:100px;
+	border:1px solid lightgray;
+	/*border-top:1px solid gray;*/	
+}
+.gongji input{
+	text-align:center;
+	font-size:30px;
+	color:orange;
+	width:100px;
+	margin:0 auto;
+	margin-top:30px;
+	border:0;
+}
+.gongji span:nth-child(1){
+	font-size:20px;
+	margin-left:416px;
+}
+.gongji span:nth-child(3){
+	font-size:20px;
+}
+.frient_right{
+	width:20%;
+	height:80%;
+	float:right;
+	padding-top:20px;
+	padding-right:120px;
+}
+.frient_right div{
+	overflow:hidden;
+}
+
+.x{
+	position:absolute;
+	top:5px;
+	right:10px;
+}
+.frient_right .div_1 p{
+	width:44px;
+	height:10px;
+	background:red;
+	float:left;
+	margin-top:7px;
+	margin-right:8px;
+}
+
+.frient_right .div_2 p{
+	width:44px;
+	height:10px;
+	background:green;
+	float:left;
+	margin-top:7px;
+	margin-right:8px;
+}
+.frient_right .div_3 p{
+	width:44px;
+	height:10px;
+	background:red;
+	float:left;
+	margin-top:7px;
+	margin-right:8px;
+}
+/*好友列表*/
+.boxx{
+	width:100%;
+	height:202px;
+	border:1px solid lightgray;
+	overflow:hidden;
+}
+.timee{
+	width:100%;
+	height:50px;
+}
+.timee span:nth-child(3){
+	margin-left:10px;
+	font-size:18px;
+}
+.timee span:nth-child(1){
+	margin-left:20px;
+	
+}
+.timee span{
+	display:block;
+	float:left;
+	font-size:18px;
+	margin-top:13px;
+}
+.frient-lists{
+	padding-top:30px;
+	padding-bottom:30px;
+	width:80%;
+	height:140px;
+	border:0;
+	overflow:hidden;
+	margin:0 auto;
+	
+}
+
+.frient-lists img{
+	float:left;
+}
+.frient-lists .gsname{
+	float:left;
+	width:482px;
+	height:50%;
+	margin-left:18px;
+	margin-right:23px;
+	/*padding-top:50px;*/
+	padding-bottom:16px;
+	font-size:30px;
+}
+.show-1{
+	float:left;
+	width:34%;
+}
+.change{
+	color: orange;
+}
+.gsname span{
+	font-size:16px;
+}
+.frient-lists .right-pic{
+	float:left;
+	width:200px;
+	height:100%;
+	/*border:1px solid gray;*/
+}
+/*右边的好友借款基本状况*/
+.right-pic span{
+	display:block;
+	width:49%;
+	height:100%;
+	float:left;
+	line-height:200px;
+	font-size:35px;
+	text-align: right;
+	color:orange;
+}
+.right-pic .yuan{
+	font-size:18px;
+	color:darkgray;
+	text-align:left;
+	
+}
+/*.right-pic span:nth-child(1){
+	
+}*/
+.qd{
+	width:270px;
+	height:52px;
+	background:rgb(86,158,255);
+	text-align:center;
+	margin:0 auto;
+	margin-top:100px;
+}
+.qd a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:22px;
+	line-height:52px;
+}
+/*底部部分*/
+
+#footer{
+	position:relative;
+	width:100%;
+	height:300px;
+	background:rgb(102,102,102);
+}
+.footr{
+	width:800px;
+	height:110px;
+	margin:0 auto;
+}
+.footr img{
+	float:left;
+}
+.footr-ul{
+	float:left;
+}
+.footr-ul li{
+	float:left;
+	padding:0px 10px;
+	margin-top:56px;
+}
+.footr-ul li a{
+	color:darkgray;
+}
+.hotphone{
+	float:right;
+	width:210px;
+	height:58px;
+	padding-left:62px;
+	line-height: 65px;
+	
+	background:url(../../img/footrdianhua.png)no-repeat left;
+	color:darkgray;
+	margin-top:36px;
+}
+.foot{
+	width:100%;
+	height:160px;
+	background:rgb(102,102,102);
+}
+.foot p{
+	margin:0 auto;
+	text-align:center;
+	color:white;
+	font-size:16px;
+	margin-bottom:6px;
+}
+.foot p:nth-child(1){
+	margin-top:45px;
+}
+.yingcan{
+	position:absolute;
+	top:-394px;
+	left:800px;
+	width:380px;
+	height:380px;
+	/*border:2px solid rgba(0,0,0,.5);*/
+	background: white;
+	display:none;
+	z-index: 100;
+}
+.yingcan #textArea{
+	width:380px;
+	height:328px;
+
+}
+.yingcan div{
+	position:relative;
+	width:100%;
+	height:52px;
+	/*border-bottom:1px solid gray;*/
+}
+.yingcan div img{
+	position:absolute;
+	top:4px;
+	right:10px;
+}
+.yingcan div p{
+	display:block;
+	width:40%;
+	height:32px;
+	padding-top:20px;
+	margin-left:34%;
+	text-align:center;
+	/*border:1px solid gray;*/
+	background:url(../../img/shuoming.png)no-repeat;
+	background-position:0 10px;
+}
+
