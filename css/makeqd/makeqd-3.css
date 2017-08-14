@@ -526,7 +526,8 @@ input{
 	border-radius:8px;
 	border:1px solid lightgray;
 	margin-bottom:20px;
-	display:block;
+	/*display:block;*/
+	display:none;
 }
 .yc input{
 	width:20px;
@@ -548,7 +549,7 @@ input{
 	border-radius:8px;
 	border:1px solid lightgray;
 	margin-bottom:20px;
-	display:block;
+	display:none;
 }
 .zq input{
 	width:20px;
@@ -568,7 +569,7 @@ input{
 	border-radius:8px;
 	border:1px solid lightgray;
 	margin-bottom:20px;
-	display:block;
+	display:none;
 	
 }
 

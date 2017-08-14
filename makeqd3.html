@@ -122,25 +122,33 @@
 						
 						<div class="huank xl">
 							<span class="hk">还款形式</span>
-							<input type="radio" checked="true" name="hk-change">
-							<span>分期</span>
-							<input type="radio" name="hk-change">
-							<span>整期</span>
+							<input type="radio" name="hk-change" class="radio-fq">
+							<span class="xl-fq"><a href="###">分期</a></span>
+							<input type="radio" name="hk-change" class="radio-zq">
+							<span class="xl-zq"><a href="###">整期</a></span>
 							<!--隐藏部分-->
 						</div>
+						
 						<div class="yc">
 							<span>共计</span><input class="yc_input" type="text"><span>元，分</span>
 							<input type="text"><span>个月</span><input type="text">
 							<span>期完成还款，次月起每月</span><input type="text">
 							<span>日还款，每次还款</span><input class="yc_input" type="text"><span>元。</span>
 						</div>
+						<div class="zq">
+							<span>共计</span><input type="text"><span>元，于</span>
+							<input type="text">
+							<span>月后还清。</span>
+						</div>
+						
+						
 						
 						<div class="lixi xl">
 							<span class="hk">利息</span>
-							<input type="radio" name="lixi-change">
-							<span>不需要</span>
-							<input type="radio" checked="true" name="lixi-change">
-							<span>需要</span>
+							<input type="radio" name="lixi-change" class="radio-lx1">
+							<span class="xl-lx-1"><a href="###">不需要</a></span>
+							<input type="radio" name="lixi-change" class="radio-lx2">
+							<span class="xl-lx-2"><a href="###">需要</a></span>
 						</div>
 						<div class="lx">
 							<input type="text" placeholder="请输入利率">
@@ -148,10 +156,10 @@
 						
 						<div class="dbr xl">
 							<span class="hk">担保人</span>
-							<input type="radio" name="dbr-change">
-							<span>不需要</span>
-							<input type="radio" name="dbr-change">
-							<span>需要</span>
+							<input type="radio" name="dbr-change" class="radio-dbr1">
+							<span class="dbr1"><a href="###">不需要</a></span>
+							<input type="radio" name="dbr-change" class="radio-dbr2">
+							<span class="dbr2"><a href="###">需要</a></span>
 						</div>
 					</div>
 					<!--右边-->
@@ -221,6 +229,35 @@
 			}
 	}
 	
+	$(".xl-fq")[0].onclick=function(){
+		console.log("aa")
+		$(".yc")[0].style.display="block";
+		$(".zq")[0].style.display="none";
+//		$(".radio")[0].style.checked="true";
+		$(".radio-fq").attr("checked",true);
+	}
+	$(".xl-zq")[0].onclick=function(){
+		$(".yc")[0].style.display="none";
+		$(".zq")[0].style.display="block";
+		$(".radio-zq").attr("checked",true);
+	}
+	$(".xl-lx-2")[0].onclick=function(){
+	$(".radio-lx2").attr("checked",true);
+		$(".lx")[0].style.display="block";
+	
+	}
+	$(".xl-lx-1")[0].onclick=function(){
+	
+	$(".radio-lx1").attr("checked",true);
+		$(".lx")[0].style.display="none";
+	}
+	
+	$(".dbr1")[0].onclick=function(){
+		$(".radio-dbr1").attr("checked",true);
+	}
+	$(".dbr2")[0].onclick=function(){
+		$(".radio-dbr2").attr("checked",true);
+	}
 	//签单说明
 //	console.log($("body").height());
 	var bodyH=$("body").height();

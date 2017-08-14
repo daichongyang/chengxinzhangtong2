@@ -69,8 +69,25 @@
 					<li class="lii"><a href="###">我的欠单</a></li>
 				</ul>
 			</div>
-			<!--线下付款-->
+			
+			<!--退货请求弹出框-->
+				<div class="th_qq">
+					<img class="x" src="img/x.png">
+					<img src="img/danbaoqd.png">
+					<p>退货请求发送成功</p>
+				</div>
+			<!--确定发送弹出框--------------------------------->
+			<div class="sure">
+				<p>确认发送？</p>
+				<div class="sure_span">
+					<span class="sure_span1"><a href="###">取消</a></span>
+					<span class="sure_span2"><a href="###">确定</a></span>
+				</div>
+			</div>
+			
+			<!--线下付款--------------------------------------->
 			<div class="xianxia_FK">
+				<img class="x" src="img/x.png">
 				<div class="fk_top">
 					<span>还款金额</span>
 					<input type="text" placeholder="请输入还款金额">
@@ -78,21 +95,55 @@
 				<div class="fk_center">
 					<p>线下付款方式</p>
 					<div class="fk_center_1">
-						<input type="radio" />
-						<span></span>
-						<input type="radio" />
-						<span></span>
+						<input type="radio" name="fk_f"/>
+						<span>银行转账</span>
+						<input type="radio"  name="fk_f"/>
+						<span>现金支付</span>
 						
 					</div>
 					<div class="fk_center_2">
-						<input type="radio" />
-						<span></span>
-						<input type="radio" />
-						<span></span>
+						<input type="radio"  name="fk_f"/>
+						<span>票据支付</span>
+						<input type="radio"  name="fk_f"/>
+						<span>其他支付方式</span>
 					</div>
 				</div>
-				<div class="fk_bottom"></div>
+				<div class="fk_bottom">
+					<span>线下还款应认真查询您还的款项是否明确的到了资方(销售方)账户，并且及时
+					与资方联系在软件上进行确认收到还款，还款期到对方未确认视为失信，将记录于您的
+					失信记录中，失信记录有效期三年，无法更改或删除。
+					</span>
+				</div>
+				<div class="qd"><a href="###">发送请求</a></div>
+				<div class="qx"><a href="###">取消</a></div>
 			</div>
+			<!--申请退货--------------------------------------->
+			<div class="shenqing_TH">
+				<div><span>退货金额</span><input type="text" placeholder="请输入退货金额"/></div>
+				<div><span>退货后剩余欠款</span><input type="text" placeholder="请输入剩余欠款"/></div>
+				<div><span>退货后每期还款金额</span><input type="text" placeholder="请输入每期还款金额"/></div>
+				<div>你申请的由系统按国家规定的允许合法的最高利息计算年利率，利率为24%。必须执行，
+				不能更改。每单可以申请多次货，如同意请确定。</div>
+				<div class="qd"><a href="###">发送请求</a></div>
+				<div class="qx"><a href="###">取消</a></div>
+				<img class="x" src="img/x.png">
+				
+			</div>	
+			<!--延期付款----------------------------------------------->
+			<div class="yanqi_FK">
+				<div><span>延期天数</span><input type="text" placeholder="请输入延期天数"/></div>
+				<div><span>还款日期</span><input type="text" placeholder="请输入还款日期"/></div>
+				<div><span>到期应还金额</span><input type="text" placeholder="请输入应还款金额"/></div>
+				<div>你申请的由系统按国家规定的允许合法的最高利息计算年利率，利率为24%。必须执行，
+				不能更改。每单可以申请多次货，如同意请确定。</div>
+				<div class="qd"><a href="###">发送请求</a></div>
+				<div class="qx"><a href="###">取消</a></div>
+				<img class="x" src="img/x.png">
+				
+				
+				
+			</div>	
+			
 			<!--右边的内容-->
 			<div class="right">
 				
@@ -221,10 +272,10 @@
 							<span>(元)</span>
 						</div>
 						<div class="yc">
-							<span>共计</span><input class="yc_input" type="text"  value="20"><span>元，分</span>
+							<span>分</span>
 							<input type="text" value="20"><span>个月</span><input type="text" value="20">
 							<span>期完成还款，次月起每月</span><input type="text" value="20">
-							<span>日还款，每次还款</span><input class="yc_input" type="text" value="20"><span>元。</span>
+							<span>日还款。</span>
 						</div>
 						<div class="dbr xl">
 							<span class="hk">每月应还金额</span>
@@ -295,8 +346,55 @@
 	</body>
 	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 	<script>
+	for(var i=0;i<$(".x").length;i++){
+		$(".x")[i].onclick=function(){
+			this.parentElement.style.display="none";
+		
+		}
+	}
+	//申请退货
+	$(".shenqing_th")[0].onclick=function(){
+		$(".shenqing_TH")[0].style.display="block";
+		$(".xianxia_FK")[0].style.display="none";
+		$(".yanqi_FK")[0].style.display="none";
+	}
 	
+	//确认发送弹出框
+	$(".sure_span1")[0].onclick=function(){
+		$(".sure")[0].style.display="none";
+	}
+	$(".sure_span2")[0].onclick=function(){
+		$(".sure")[0].style.display="none";
+		$(".th_qq")[0].style.display="block";
+	}
+	//线下支付******************************
+	$(".xianxia_fk")[0].onclick=function(){
+		$(".xianxia_FK")[0].style.display="block";
+		$(".shenqing_TH")[0].style.display="none";
+		$(".yanqi_FK")[0].style.display="none";
+
+	}
+	$(".yanqi_fk")[0].onclick=function(){
+		$(".xianxia_FK")[0].style.display="none";
+		$(".shenqing_TH")[0].style.display="none";
+		$(".yanqi_FK")[0].style.display="block";
+
+	}
+	for(var i=0;i<$(".qd").length;i++){
+		$(".qd")[i].onclick=function(){
+		$(".sure")[0].style.display="block";
+		$(".xianxia_FK")[0].style.display="none";
+		$(".shenqing_TH")[0].style.display="none";
+		$(".yanqi_FK")[0].style.display="none";
+		}
+		$(".qx")[i].onclick=function(){
+			$(".xianxia_FK")[0].style.display="none";
+			$(".shenqing_TH")[0].style.display="none";
+			$(".yanqi_FK")[0].style.display="none";
+		}
+	}
 	
+	//****************************************
 	for(var i=0;i<$(".nav-list>ul>li").length;i++){
 			$(".nav-list>ul>li")[i].onmouseover=function(){
 				this.children[0].style.color="dodgerblue";

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/chengxingshu/chengxingshu-2.css" />
+		
+	</head>
+	<body>
+		<div class="hei"></div>
+		<!--头部-->
+		<div id="header">
+			<!--顶部导航栏-->
+			<div class="top">
+				<div class="top-ch">
+					<div class="top-ch-left"><p>3253256678</p><p>热线电话：</p></div>
+					<ul class="top-ul-right">
+						<li><a href="../login/login.html">登录</a></li>
+						<li><a href="../register/register2.html">注册</a></li>
+						<li><a href="#">|</a></li>
+						<li><a href="#" class="a-phone">手机客户端</a>
+							<div class="er-phone"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--logo导航栏部分----------------------------------->
+			<div class="nav">
+				<div class="logo"></div>
+				<div class="nav-list">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">欠单处理</a></li>
+							<li><a href="#">商城</a></li>
+							<li><a href="#">个人中心</a></li>
+						</ul>
+				</div>
+			</div>
+			
+		</div>
+		<p class="hh"></p>
+		<!--中间内容---------->
+		<div class="content">
+			<div class="lists">
+				<div><input type="radio" name="change">个人</div>
+				<div><input type="radio" name="change">公司<span>（请选择个人立场，代表公司法人或代表个人）</span></div>
+				<ul class="ul-list">
+					<li><a href="###">账户总览</a></li>
+					<li><a href="###">好友</a></li>
+					<li><a href="###">商城</a></li>
+					<li><a href="###">诚信果树</a></li>
+				</ul>
+			</div>
+			<div class="content-box">
+						
+					<div class="first-div">
+						
+						<img class="jiantou" src="img/cxs-1.png">
+						<span>升级说明</span>
+					</div>
+				<div class="show"><img src="img/sun.png">
+					<div>
+						<span>
+							（1）太阳代表注册时长，照耀时长代表注册天数。
+						</span>
+					</div>
+				</div>
+				<div class="show"><img src="img/moons.png">
+					<div>
+						<span>
+					（2）树木代表成交笔数，少于100笔交易显示初级树形态，
+					100-499笔交易显示中级树形态；500-999笔交易显示高级树形态；
+					大于1000笔交易显示超级树形态。
+				</span>
+					</div>
+				</div>
+				<div class="show"><img src="img/fly.png">
+					<div>
+						<span>
+					（3）飞行动物代表人脉商圈，好友人数满10人赠送一只蝴蝶，10只
+					蝴蝶替换成一只小鸟，10只小鸟替换成1只老鹰：满1000人赠送一只老鹰，10只
+					老鹰达到满级。
+					
+				</span>
+					</div>
+				</div>
+				<div class="show"><img src="img/apply.png">
+					<div>
+						<span>
+					（4）果实代表单次交易金额，单笔交易金额10000元-49999元
+					赠送一个青果；单笔交易金50000-99999元赠送一个黄果；单笔交易金额
+					100000元以上赠送一个红果，一次交易只赠送一个果实。
+					
+				</span>
+					</div>
+				</div>
+				<div class="show"><img src="img/home.png">
+				<div>
+					<span>
+					（5）高档豪宅代表资金总量，交易总金额达10万元兑换一辆跑车；达50
+					万元兑换一个花园；达100万元兑换一个别墅。
+				</span>
+				</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--底部部分------------------------->
+		<div id="footer">
+			<div class="yingcan">
+				<div><p>签单说明</p><img class="o_img" src="img/x.png"></div>
+				<textarea id="textArea" value="签单说明"></textarea>
+			</div>
+			<div class="footr">
+				<img src="img/footerer.png">
+				<ul class="footr-ul">
+					
+					<li><a href="###">签单说明</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">问题</a></li>
+					<li></li>
+				</ul>
+				<div class="hotphone">
+					热线电话：3253256678
+				</div>	
+			</div>
+			<div class="foot">
+				<p>Copyright&copy;2015深圳诚信财通互联网信息咨询有限公司&nbsp;版权所有&nbsp;备案号：粤ICP备1407927号ICP证粤B2-20160194</p>
+				<p>地址：广东省深圳市南山区高新南一道富成科技大厦四楼&nbsp;座机：0755-86160888</p>
+				<p>网贷有风险&nbsp;理财需谨慎&nbsp;最终收益实际为准</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script>
+	
+	for(var i=0;i<$(".x").length;i++){
+		$(".x")[i].onclick=function(){
+			this.parentElement.style.display="none";
+		
+		}
+	}
+	
+	
+		//logo导航栏部分列表的js
+	for(var i=0;i<$(".nav-list>ul>li").length;i++){
+			$(".nav-list>ul>li")[i].onmouseover=function(){
+				this.children[0].style.color="dodgerblue";
+				this.style.borderBottom="5px solid dodgerblue";
+			}
+			$(".nav-list>ul>li")[i].onmouseout=function(){
+				this.children[0].style.color="black";
+				this.style.borderBottom="5px solid white";
+				$(".nav-list>ul>li")[0].style.borderBottom="5px solid dodgerblue";
+				$(".nav-list>ul>li")[0].children[0].style.color="dodgerblue";
+			}
+	}
+	
+	//签单说明
+//	console.log($("body").height());
+	var bodyH=$("body").height();
+	var bodyW=$("body").width();
+	$(".footr-ul>li")[0].onmousedown=function(){
+		$(".yingcan")[0].style.display="block";
+		$(".hei")[0].style.width=bodyW+"px";
+		$(".hei")[0].style.height=bodyH+"px";
+		$(".hei")[0].style.display="block";
+	}
+	//二维码
+	var count=0;
+	$(".a-phone")[0].onmousedown=function(){
+		if(count%2==0){
+			$(".er-phone")[0].style.display="block";
+		}else{
+			$(".er-phone")[0].style.display="none";
+		}
+		count++;
+	}
+	
+	//签单说明隐藏部分
+	$(".o_img")[0].onmousedown=function(){
+		$(".yingcan")[0].style.display="none";
+		$(".hei")[0].style.display="none";
+	}
+
+
+	</script>
+</html>

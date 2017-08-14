@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/center/center-20.css" />
+	</head>
+	<body>
+		<div class="hei"></div>
+		<!--头部-->
+		<div id="header">
+			<!--顶部导航栏-->
+			<div class="top">
+				<div class="top-ch">
+					<div class="top-ch-left"><p>3253256678</p><p>热线电话：</p></div>
+					<ul class="top-ul-right">
+						<li><a href="../login/login.html">登录</a></li>
+						<li><a href="../register/register2.html">注册</a></li>
+						<li><a href="#">|</a></li>
+						<li><a href="#" class="a-phone">手机客户端</a>
+							<div class="er-phone"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--logo导航栏部分----------------------------------->
+			<div class="nav">
+				<div class="logo"></div>
+				<div class="nav-list">
+						<ul>
+							<li><a href="#">首页</a></li>
+							<li><a href="#">欠单处理</a></li>
+							<li><a href="#">商城</a></li>
+							<li><a href="#">个人中心</a></li>
+						</ul>
+				</div>
+			</div>
+			
+		</div>
+		<p class="hh"></p>
+		<!--中间内容---------->
+		<div class="content">
+			<div class="lists">
+				<div><input type="radio" name="change">个人</div>
+				<div><input type="radio" name="change">公司<span>（请选择个人立场，代表公司法人或代表个人）</span></div>
+				<ul class="ul-list">
+					<li><a href="###">账户总览</a></li>
+					<li><a href="###">好友</a></li>
+					<li><a href="###">商城</a></li>
+					<li><a href="###">诚信果树</a></li>
+				</ul>
+			</div>
+			<div class="first-div"><img class="jiantou" src="img/jiantou.png">
+					<span>添加供应商</span>
+				</div>
+			<div class="content-box">
+						
+				
+				<!--主要内容-------->
+				<div class="add-box">
+					<!--弹出框------>
+					<div class="add-tc">
+						<p>确认邀请&nbsp;?</p>
+						<div><span><a href="###" class="qxx">取消</a></span><span><a href="###" class="qdd">确定</a></span></div>
+					</div>
+					<div class="seccses">
+						<img class="x" src="img/x.png">
+						<img src="img/danbaoqd.png">
+						<p>邀请成功</p>
+					</div>
+					<!------>
+					<div class="add-seccese"></div>
+					<div class="add-frients">
+						<img src="img/add-frients.png">
+						<a href="###">点击选择好友</a>
+					</div>
+					
+					<div class="left">
+						<div><span>授予职位</span><input type="text" placeholder="请输入授予职位"></div>
+						<div><span>每日可签单额度</span><input type="text" placeholder="请输入每日可签单额度"/></div>
+					</div>
+					<div class="right">
+						<div><span>授权到期时间</span><input type="text" placeholder="请输入授权到期时间"></div>
+						<div><span>可签单总额度</span><input type="text" placeholder="请输入可签单总额"/></div>
+					</div>
+					
+					<div class="add-che">
+						<input type="radio" >
+						<span>签署欠单需经审核</span>
+					</div>
+				</div>
+				
+				<div class="tousu-div">
+					<a class="qd" href="###">邀请</a>
+					<a class="qx" href="###">取消</a>
+					<a class="xy" href="###">任职责任协议</a>
+				</div>
+			</div>
+			
+		</div>
+		<!--底部部分------------------------->
+		<div id="footer">
+			<div class="yingcan">
+				<div><p>签单说明</p><img class="o_img" src="img/x.png"></div>
+				<textarea id="textArea" value="签单说明"></textarea>
+			</div>
+			<div class="footr">
+				<img src="img/footerer.png">
+				<ul class="footr-ul">
+					
+					<li><a href="###">签单说明</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">|</a></li>
+					<li><a href="#">问题</a></li>
+					<li></li>
+				</ul>
+				<div class="hotphone">
+					热线电话：3253256678
+				</div>	
+			</div>
+			<div class="foot">
+				<p>Copyright&copy;2015深圳诚信财通互联网信息咨询有限公司&nbsp;版权所有&nbsp;备案号：粤ICP备1407927号ICP证粤B2-20160194</p>
+				<p>地址：广东省深圳市南山区高新南一道富成科技大厦四楼&nbsp;座机：0755-86160888</p>
+				<p>网贷有风险&nbsp;理财需谨慎&nbsp;最终收益实际为准</p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script>
+	
+	for(var i=0;i<$(".x").length;i++){
+		$(".x")[i].onclick=function(){
+			this.parentElement.style.display="none";
+		
+		}
+	}
+	//弹窗
+	
+	$(".qd")[0].onclick=function(){
+		$(".add-tc")[0].style.display="block";
+	}
+	$(".qdd")[0].onclick=function(){
+		$(".seccses")[0].style.display="block";
+		$(".add-tc")[0].style.display="none";
+	}
+	$(".qxx")[0].onclick=function(){
+		$(".add-tc")[0].style.display="none";
+	}
+	
+		//logo导航栏部分列表的js
+	for(var i=0;i<$(".nav-list>ul>li").length;i++){
+			$(".nav-list>ul>li")[i].onmouseover=function(){
+				this.children[0].style.color="dodgerblue";
+				this.style.borderBottom="5px solid dodgerblue";
+			}
+			$(".nav-list>ul>li")[i].onmouseout=function(){
+				this.children[0].style.color="black";
+				this.style.borderBottom="5px solid white";
+				$(".nav-list>ul>li")[0].style.borderBottom="5px solid dodgerblue";
+				$(".nav-list>ul>li")[0].children[0].style.color="dodgerblue";
+			}
+	}
+	
+	//签单说明
+//	console.log($("body").height());
+	var bodyH=$("body").height();
+	var bodyW=$("body").width();
+	$(".footr-ul>li")[0].onmousedown=function(){
+		$(".yingcan")[0].style.display="block";
+		$(".hei")[0].style.width=bodyW+"px";
+		$(".hei")[0].style.height=bodyH+"px";
+		$(".hei")[0].style.display="block";
+		console.log($(".hei").height())
+	}
+	//二维码
+	var count=0;
+	$(".a-phone")[0].onmousedown=function(){
+		if(count%2==0){
+			$(".er-phone")[0].style.display="block";
+		}else{
+			$(".er-phone")[0].style.display="none";
+		}
+		count++;
+	}
+	
+	//签单说明隐藏部分
+	$(".o_img")[0].onmousedown=function(){
+		$(".yingcan")[0].style.display="none";
+		$(".hei")[0].style.display="none";
+	}
+
+
+	</script>
+</html>

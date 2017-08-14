@@ -16,6 +16,7 @@ body{
 input{
 	outline:none;
 }
+input::-webkit-input-placeholder{color:darkgray;}
 .hh{
 	height:20px;
 	width:100%;

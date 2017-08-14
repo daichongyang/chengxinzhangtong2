@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>诚信财通首页</title>
-		<link rel="stylesheet" href="css/selfCenter/selfCenter.css" />	
+		<link rel="stylesheet" href="css/selfCenter/selfCenter-3.css" />	
 	</head>
 	<body>
 		<div class="hei"></div>
@@ -61,36 +61,8 @@
 				</div>
 				<!--支付密码窗口----------------------------------->
 			<div class="box">
-			<div class="mbox">
-			<div class="Wndow">
-				<div class="Wndow-dx"><img src="img/zhifu.png">支付密码</div>
-				<div class="wndow-box">
-					<div class="zhifu"><input type="password" placeholder="请输入支付密码"></div>
-					<div class="cuowu"><img src="img/cuowu_03.png"><span>密码错误请重新输入</span></div>
-					<div class="quedin"><a href="###">确定</a></div>
-					<div class="quxiao"><a href="###">取消</a></div>
-				</div>
-			</div>
-			<!--添加银行卡------------------------------------------------>
-			<div class="add-code">
-					<div class="add-code-cuowu1 add-code-cuowu"><img src="img/cuowu_03.png"><span>输入错误，请重输</span></div>	
-					<div class="add-code-cuowu2 add-code-cuowu"><img src="img/cuowu_03.png"><span>输入错误，请重输</span></div>
-					<div class="add-code-cuowu3 add-code-cuowu"><img src="img/cuowu_03.png"><span>输入错误，请重输</span></div>
-					<img class="x" src="img/x.png">
-					<div class="add-code-dx"><img src="img/jiahao.png"><a href="###">添加银行卡</a></div>
-					<div class="add-code-box">
-					<div><span>持卡人姓名</span><input type="text" placeholder="请输入您的真实姓名"/></div>
-					<div><span>持卡人身份证号</span><input type="text" placeholder="请输入你的身份证号码"/></div>
-					
-					<div><span>银行卡号</span><input type="text" placeholder="请输入您要绑定的银行卡号"/></div>
-					
-					<div><span>绑定手机号</span><input type="text" placeholder="请输入您银行卡所绑定的手机号"/></div>
-						
-					<div><span>验证码</span><input type="text" placeholder="请输入验证码"/><div class="hq"><a href="###">获取验证码</a></div></div>
-				</div>	
-				<div class="add-code-quedin"><a href="###">确定</a></div>
-				<div class="add-code-quxiao"><a href="###">取消</a></div>
-			</div>
+			
+			
 			<!--我的银行卡------------------------------->
 			<div class="add-yhk">
 				<img class="x" src="img/x.png">
@@ -104,7 +76,7 @@
 					<div class="add-yhk-div"><img src="img/jiahao.png"><a href="###">添加银行卡</a></div>
 				</div>
 			</div>
-			</div>
+		
 			</div>
 		</div>
 		
@@ -115,7 +87,7 @@
 				<textarea id="textArea" value="签单说明"></textarea>
 			</div>
 			<div class="footr">
-				<img src="imgs/footerer.png">
+				<img src="img/footerer.png">
 				<ul class="footr-ul">
 					
 					<li><a href="###">签单说明</a></li>
@@ -153,17 +125,7 @@
 			}
 	}
 	
-	//中间隐藏部分的操作
-	$(".quedin")[0].onmousedown=function(){
-		$(".mbox")[0].style.top="-565px";
-	}
-    $(".add-yhk-div")[0].onmousedown=function(){
-    	$(".mbox")[0].style.left="-497px";
-    }
-     $(".add-code-quedin")[0].onmousedown=function(){
-    	$(".mbox")[0].style.left="0px";
-    }
-   
+	
 	//二维码
 	var count=0;
 	$(".a-phone")[0].onmousedown=function(){
